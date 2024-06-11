@@ -1,11 +1,65 @@
-# 42-Inception-Installer
-The Inception Project Setup Script is a comprehensive automation tool designed to streamline the initial setup process for the Inception project.
-This script ensures that all necessary dependencies, tools, and configurations are properly installed and configured, allowing developers to focus on the core aspects of their work without the hassle of manual setup.
-The script is still being developed so any error you encounter you can always create an issue :)
+# Docker Utilities Installation Script
 
-# To get it to WORK!
-# 1) This script is to be used in Debian 11 (That's where i tested it)
-# 2) You have to add your user to the sudoers before executing this script, otherwise it won't work since it won't have the necessary permissions to install the dependencies for this project
+Welcome to the Docker Utilities Installation Script repository! This script is designed to help you quickly and easily install all the necessary utilities to run Docker on your system.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+
+## Introduction
+
+This script automates the installation of Docker and its essential utilities on your system. Whether you are setting up Docker for the first time or configuring it on a new machine, this script simplifies the process by handling all the necessary steps.
+
+## Features
+
+- Installs Docker Engine
+- Installs Docker Compose
+- Sets up Docker user group
+- Ensures all dependencies are met
+
+## Requirements
+
+- Debian 12
+- Administrative (root) privileges for using sudo
+
+## Installation
+
+1. **Clone the Repository**:
+    ```bash 
+    git clone https://github.com/joaoped2-42PORTO/42-Inception-Installer.git
+    cd 42-Inception-Installer
+    ```
+
+2. **Make the Script Executable**:
+    ```bash
+    chmod +x script.sh
+    ```
+
+## Usage
+
+1. **Run the Script**:
+    ```bash
+    ./script.sh
+    ```
+
+2. **Follow the On-Screen Instructions**:
+    The script will guide you through the installation process, providing prompts and feedback as necessary.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request. Please ensure that your contributions adhere to the coding standards and guidelines of the project.
 
 
-Script made by: https://profile.intra.42.fr/users/joaoped2
+## Acknowledgments
+
+- The Docker community for their excellent documentation and support.
+- All contributors who have helped improve this project.
+
+---
+
+Happy coding!
