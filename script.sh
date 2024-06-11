@@ -52,41 +52,7 @@ header(){
 }
 header
 
-# Friendly screen clear
-echo "Want to clear the terminal before"
-echo "executing the script?"
-echo -n "(Type yes/no): "
-read answer
-while true; do
-    if [ "$answer" == "$expected_answer_yes" ]; then
-        clear
-        header
-        break
-    elif [ "$answer" == "$expected_answer_no" ]; then
-        break
-    else
-	tput cuu 1
-	tput sc
-	for i in {1..1}; do
-		tput el
-	if [ $i -lt 1 ]; then
-        	tput cud1
-    	fi
-	done
-	tput rc
-	tput cuu 1
-        echo "Answer not valid, please try again"
-        echo "Want to clear the terminal before"
-	echo "executing the script?"
-	echo -n "(Type yes/no): "
-        read answer
-    fi
-done
-
-
 # Password Check
-clear
-header
 echo -n "Enter your password: "
 read -s pwd
 tput cuu1
